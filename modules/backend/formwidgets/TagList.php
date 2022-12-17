@@ -124,7 +124,7 @@ class TagList extends FormWidgetBase
     protected function hydrateRelationSaveValue($names): array
     {
         if (!$names) {
-            return $names;
+            return [$names];
         }
 
         $relationModel = $this->getRelationModel();
