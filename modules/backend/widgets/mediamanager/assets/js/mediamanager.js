@@ -732,7 +732,8 @@
             paramName: 'file_data',
             timeout: 0,
             headers: {},
-            createImageThumbnails: false
+            createImageThumbnails: false,
+            maxFilesize: this.options.maxFilesize,
             // fallback: implement method that would set a flag that the uploader is not supported by the browser
         }
 
@@ -1309,7 +1310,8 @@
         selectSingleImage: 'Please select a single image.',
         selectionNotImage: 'The selected item is not an image.',
         bottomToolbar: false,
-        cropAndInsertButton: false
+        cropAndInsertButton: false,
+        maxFileSize: 0,
     }
 
     var old = $.fn.mediaManager
